@@ -25,12 +25,16 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
     </extensions>
     <actions>
         <action id="cz.lukynka.mayaplugin.actions.LazygitAction" class="cz.lukynka.mayaplugin.actions.LazygitAction"
                 text="Open Lazygit" description="Opens lazygit in new terminal window">
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl E"/>
+        </action>
+        <action id="cz.lukynka.mayaplugin.actions.RunCommandInExternalTerminalAction"
+                class="cz.lukynka.mayaplugin.actions.RunCommandInExternalTerminalAction"
+                text="Run command in new terminal window">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl R"/>
         </action>
     </actions>
 </idea-plugin>
